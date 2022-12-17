@@ -1,0 +1,350 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.first_ui{
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: 80% 20%;
+  place-items: center;
+  animation-name: NASA;
+  animation-duration: 10s;
+  animation-timing-function: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.first_logo{
+  width: 4.5rem;
+}
+.bottom_picture{
+  width: 4.5rem;
+}
+.main{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(248, 248, 248);
+  padding: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
+}
+.head{
+  max-width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
+}
+.first_head{
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.image{
+  width: auto;
+  height: auto;
+}
+.animated_image{
+  position: absolute;
+  top: 3.5%;
+  right: 12.5%;
+  animation: display ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes display{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+.l{
+  animation-duration: 5s;
+  animation-delay: 7s;
+  z-index: 10;
+}
+.o{
+  animation-duration: 10s;
+  animation-delay: 2s;
+  z-index: 9;
+}
+.p{
+  animation-duration: 4s;
+  animation-delay: 2s;
+  z-index: 8;
+}
+.q{
+  animation-duration: 4s;
+  animation-delay: 2s;
+  z-index: 7;
+}
+.second_head{
+  width: 100%;
+  height: auto;
+  padding: 0 5rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-gap: 1rem;
+  place-items: center;
+}
+.one{
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  padding: 0.5rem 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
+  grid-gap: 0.4rem;
+  border: 0.5px solid rgb(200, 200, 200);
+}
+.text{
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}
+.inner_text{
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: Billabong,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+.input{
+  width: 100%;
+  height: auto;
+}
+.input_text{
+  width: 100%;
+  height: auto;
+  padding: 0.6rem 0.5rem;
+  border: 0.2px solid rgb(208, 208, 208);
+  outline: none;
+}
+.input_text:placeholder-shown{
+  font-size: 0.8rem;
+}
+.checkbox{
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.label{
+  font-size: 0.8rem;
+  font-family: inherit;
+  margin-left: 5px;
+}
+.login{
+  width: 100%;
+  height: auto;
+}
+.submit{
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 4px;
+  background-color: #0095f6;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 1rem;
+}
+.or{
+  width: 100%;
+  height: auto;
+  padding: 0.8rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.p{
+  color: #8e8e8e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.line{
+  width: 40%;
+  height: 1px;
+  background-color: rgb(193, 193, 193);
+}
+.facebook{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.pp{
+  color: #385185;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 10px;
+}
+i{
+  transform: translateY(2px);
+}
+.forgot{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+.ppp{
+  color: #385185;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+}
+.two{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
+}
+.upper{
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  padding: 1.2rem 0;
+  border: 0.5px solid rgb(200, 200, 200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p1{
+  color: #262626;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: inherit;
+}
+.p2{
+  color: #0095f6;
+  margin-left: 5px;
+  font-family: inherit;
+  font-weight: 600;
+}
+.app{
+  width: 100%;
+  height: auto;
+  padding: 1.8rem 0;
+  text-align: center;
+}
+.lower{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logos_companies{
+  width: 8rem;
+  height: 2.6rem;
+}
+.k{
+  margin-left: 1rem;
+}
+.inner_text{
+  cursor: pointer;
+}
+.checkbox{
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+}
+@media screen and (max-width:950px) {
+  .head{
+    width: 75%;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .first_head{
+    display: none;
+  }
+  .second_head{
+    padding: 0;
+  }
+  .one{
+    width: calc(auto + 2rem);
+    padding: 0.5rem 2.5rem;
+  }
+  .lower{
+    padding: 0.5rem 0;
+  }
+}
+@media screen and (max-width:450px){
+  .head{
+    width: 100%;
+  }
+  .main{
+    background-color: #ffffff;
+  }
+  .one{
+    padding: 0.5rem 0;
+    border: none;
+  }
+  .upper{
+    border: none;
+  }
+  .login{
+    display: grid;
+    place-items: center;
+  }
+  .submit{
+    width: 90%;
+  }
+  .input{
+    display: grid;
+    place-items: center;
+  }
+  .input_text{
+    width: 95%;
+  }
+  .or{
+    padding: 0.8rem 0.5rem;
+  }
+}
+.nav_head{
+  width: 100%;
+  height: auto;
+  padding: 0 2rem 0 0.5rem;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-gap: 1.5rem;
+  place-items: center;
+}
+.upper_nav{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.anchor{
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-left: 1.5rem;
+  margin-top: 5px;
+  color: #8e8e8e;
+  font-size: 0.8rem;
+}
+.up{
+  justify-content: center;
+}
+.hover:hover{
+  text-decoration: underline;
+}
